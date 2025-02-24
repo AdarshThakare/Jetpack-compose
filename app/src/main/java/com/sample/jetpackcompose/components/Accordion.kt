@@ -25,6 +25,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -74,7 +75,9 @@ fun ExpandableCard () {
                     maxLines = 5,
                     lineHeight = 24.sp,
                     overflow = TextOverflow.Ellipsis,
-                    modifier = Modifier.padding(bottom = 16.dp).width(360.dp),
+                    modifier = Modifier.padding(start = 16.dp, end = 16.dp,bottom = 16.dp).width(300.dp),
+                    textAlign = TextAlign.Center,
+
                 )
             }
         }
